@@ -1,0 +1,90 @@
+*{
+    padding: 0%;
+    margin: 0%; 
+   box-sizing: border-box;
+}
+
+#main{
+   
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2ea390 ;
+}
+.note{
+    margin-top: 1cm;
+    margin-left: 1cm;
+    height: 300px;
+    width: 25%;
+    background-color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.tool{
+    height: 40px;
+    width: 100%;
+    background-color: #566573;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    justify-content: space-between;
+}
+.tool i{
+    cursor: pointer;
+}
+
+.note textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.note textarea:focus{
+    border: 0;
+    outline: 0;
+}
+
+#addnote{
+    right: 10px;
+    position:fixed;
+    background-color:black;
+    color: azure;
+    cursor: pointer;
+    font-size: x-large;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+}
+
+
+ /* @media screen and (max-width:720px) {
+
+   .note{ 
+    width: 50%;
+    }
+ } */
+
+ @media screen and (max-width:1024px) {
+    .note{ 
+        margin: 2cm;
+        width: 80%;
+        } 
+    #addnote{
+        width: 100%;
+        right: auto;
+        height: 1.5cm;
+    }    
+    .tool{
+        height: 2cm;
+        justify-content: space-between;
+        font-size: xx-large;
+    }
+ }
