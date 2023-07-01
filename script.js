@@ -31,7 +31,7 @@ const addNewNote = (text = "") => {
     note.innerHTML = `<div class="tool"><label title="Save"><i class="save fa-solid fa-floppy-disk"></i></label>
     <label title="Delete"><i class="trash fa-sharp fa-solid fa-trash"></i></label>
  </div>
-    <textarea>${text}</textarea>`;
+    <textarea placeholder="Note here...">${text}</textarea>`;
 
      note.querySelector('.trash').addEventListener('click',()=>{
         note.remove()
