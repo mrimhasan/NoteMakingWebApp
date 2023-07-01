@@ -74,9 +74,10 @@
 
  @media screen and (max-width:1024px) {
     .note{ 
-        margin: 2cm;
-        width: 80%;
-        } 
+        margin-top: 1.7cm;
+        margin-right: 1cm;
+        width: 100%;
+        }  
     #addnote{
         width: 100%;
         right: auto;
